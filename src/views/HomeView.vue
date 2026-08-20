@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import { RouterLink } from 'vue-router'
 import CounterBox from '../components/CounterBox.vue'
 import TimelineItem from '../components/TimelineItem.vue'
 import GalleryImage from '../components/GalleryImage.vue'
@@ -167,10 +168,16 @@ const footerDays = computed(() => elapsed.value.days)
         <div ref="galleryRoot" class="gallery-grid reveal" :class="{ visible: galleryVisible }">
           <GalleryImage v-for="(img, index) in gallery" :key="img.url" v-bind="img" :index="index" />
         </div>
+        <div class="gallery-more">
+          <RouterLink to="/photos" class="photos-link">
+            Xem thêm hình ảnh của em ♥
+          </RouterLink>
+        </div>
       </div>
     </section>
 
     <section class="promise-section">
+
       <div class="content-medium">
         <header class="section-heading">
           <p class="script">Những lời hứa</p>
