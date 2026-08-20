@@ -38,12 +38,12 @@ const petals = Array.from({ length: 12 }, (_, i) => ({
 }))
 
 const moments: Moment[] = [
-  { date: '14/03/2022', title: 'Lần đầu gặp gỡ', desc: 'Buổi chiều hôm ấy, Vũ thấy Trang đứng bên cửa sổ thư viện — ánh nắng chiều vàng rọi lên mái tóc, và tim anh đã bỏ lỡ một nhịp.', icon: '🌟', img: 'https://images.unsplash.com/photo-1758297802405-ab18e1a30c62?w=500&h=400&fit=crop&auto=format', alt: 'Couple holding hands walking through blooming garden' },
-  { date: '14/06/2022', title: 'Buổi hẹn hò đầu tiên', desc: 'Một tách cà phê, một chiếc bánh nhỏ, và hàng giờ trò chuyện không dứt. Trang nhận ra Vũ là người cô muốn kể mọi câu chuyện.', icon: '☕', img: 'https://images.unsplash.com/photo-1513279922550-250c2129b13a?w=500&h=400&fit=crop&auto=format', alt: 'Two people sitting together with candles at night' },
-  { date: '14/12/2022', title: 'Lời thú nhận', desc: 'Dưới bầu trời đầy sao, Vũ cầm tay Trang và nói ba chữ giản dị nhất thế gian. Trang gật đầu — và thế giới chỉ còn hai người.', icon: '✨', img: 'https://images.unsplash.com/photo-1591969851586-adbbd4accf81?w=500&h=400&fit=crop&auto=format', alt: 'Silhouette of two people embracing against golden light' },
-  { date: '14/03/2023', title: 'Kỷ niệm 1 năm', desc: 'Một năm đầy những nụ cười, những buổi sáng cùng nhau, và những lúc bên nhau vượt qua khó khăn. Tình yêu đã trở thành ngôi nhà.', icon: '🎂', img: 'https://images.unsplash.com/photo-1615966650071-855b15f29ad1?w=500&h=400&fit=crop&auto=format', alt: 'Silhouette of couple dancing on beach at golden hour' },
-  { date: '14/03/2024', title: 'Kỷ niệm 2 năm', desc: 'Hai năm — mỗi ngày là một trang mới trong cuốn sách tình yêu của chúng mình. Vũ và Trang, mãi bên nhau.', icon: '💍', img: 'https://images.unsplash.com/photo-1781145861644-3defa847eed9?w=500&h=400&fit=crop&auto=format', alt: 'Smiling couple walking on a path through flowers' },
-]
+  { date: '14/03/2022', title: 'Lần đầu gặp gỡ', desc: 'Tối hôm ấy đi xem phim, Em đẹp đến mức làm Anh quay cuồng mất phương hướng lượn luôn hai vòng quanh cầu Vĩnh Tuy, để rồi trái tim lỡ nhịp ngay lần đầu thấy Trang.', icon: '🌟', img: 'https://images.unsplash.com/photo-1758297802405-ab18e1a30c62?w=500&h=400&fit=crop&auto=format', alt: 'Couple holding hands walking through blooming garden' },
+  { date: '14/06/2022', title: 'Nắm tay ở Hồ Tây', desc: 'Đứng trước Hồ Tây lộng gió, lần đầu tiên Vũ lấy hết dũng khí nắm lấy bàn tay nhỏ nhắn của Trang, nghe tiếng em cười trong veo giữa đêm.', icon: '✨', img: 'https://images.unsplash.com/photo-1513279922550-250c2129b13a?w=500&h=400&fit=crop&auto=format', alt: 'Two people sitting together with candles at night' },
+  { date: '14/12/2022', title: 'Lời thú nhận', desc: 'Dưới bầu trời đêm lấp lánh, Vũ trao Trang cái ôm ấm áp và lời tỏ tình chân thành. Trang gật đầu, thế giới lúc ấy chỉ còn lại hai người.', icon: '❤️', img: 'https://images.unsplash.com/photo-1591969851586-adbbd4accf81?w=500&h=400&fit=crop&auto=format', alt: 'Silhouette of two people embracing against golden light' },
+  { date: '14/03/2023', title: 'Kỷ niệm 1 năm', desc: 'Tròn một năm bên nhau với biết bao kỷ niệm ngọt ngào. Từ những vòng xe lượn phố đến những bình yên nắm tay qua giông bão.', icon: '🎂', img: 'https://images.unsplash.com/photo-1615966650071-855b15f29ad1?w=500&h=400&fit=crop&auto=format', alt: 'Silhouette of couple dancing on beach at golden hour' },
+  { date: '14/03/2024', title: 'Kỷ niệm 2 năm', desc: 'Hai năm trôi qua, tình yêu vẫn vẹn nguyên như ngày đầu. Cảm ơn em vì đã chọn anh giữa muôn vàn lối rẽ — Vũ & Trang, mãi bên nhau.', icon: '💍', img: 'https://images.unsplash.com/photo-1781145861644-3defa847eed9?w=500&h=400&fit=crop&auto=format', alt: 'Smiling couple walking on a path through flowers' },
+];
 
 const gallery = [
   { url: 'https://images.unsplash.com/photo-1615966650071-855b15f29ad1?w=600&h=500&fit=crop&auto=format', alt: 'Dancing at golden hour', tall: true },
@@ -55,8 +55,8 @@ const gallery = [
 ]
 
 const promises = [
-  { icon: '🌙', title: 'Mỗi đêm', desc: 'Anh sẽ luôn nhắn tin chúc em ngủ ngon, dù ngày đó có bận đến đâu.' },
-  { icon: '☀️', title: 'Mỗi sáng', desc: 'Cà phê đầu tiên của ngày sẽ làm anh nghĩ đến em — như mọi khi.' },
+  { icon: '🌙', title: 'Mỗi đêm', desc: 'Anh sẽ luôn chúc em ngủ ngon, dù ngày đó có bận đến đâu.' },
+  { icon: '☀️', title: 'Mỗi sáng', desc: 'Nguời đầu tiên trong ngày anh nghĩ đến là em — như mọi khi.' },
   { icon: '💫', title: 'Mãi mãi', desc: 'Dù thời gian trôi qua, tình yêu dành cho em chỉ lớn hơn, không bao giờ nhỏ lại.' },
 ]
 
@@ -144,16 +144,16 @@ const footerDays = computed(() => elapsed.value.days)
     <section class="letter-section">
       <div ref="letterRoot" class="letter-wrap reveal" :class="{ visible: letterVisible }">
         <div class="letter-heart">♥</div>
-        <p class="script">Từ Vũ gửi Trang</p>
+        <p class="script">Từ Anh gửi đến Bé iuuu</p>
         <h2>Lá thư tình</h2>
         <article class="letter-card">
           <div class="quote-mark">&quot;</div>
           <div class="letter-copy">
-            <p>Trang ơi, từ cái buổi chiều đầu tiên ngồi bên nhau ở thư viện, anh đã biết cuộc đời mình sẽ khác đi. Không phải vì em đẹp — dù em đẹp lắm — mà vì cái cách em cười, cái cách em nói chuyện, khiến anh muốn ngồi nghe mãi không thôi.</p>
-            <p>Mỗi ngày bên em là một món quà anh không bao giờ xứng đáng được nhận. Em là người làm cho những buổi sáng thường ngày trở nên đáng sống, làm cho những lúc khó khăn nhất cũng có chỗ để dựa vào.</p>
-            <p>Cảm ơn em đã chọn anh — trong tất cả mọi ngày, trong tất cả mọi lúc. Anh yêu em hôm nay, ngày mai, và mãi mãi.</p>
+            <p>Trang ơi, từ cái tối đầu tiên đưa em đi xem phim mà anh run đến mức lượn nhầm tới hai vòng quanh cầu Vĩnh Tuy, anh đã biết trái tim mình lỡ nhịp mất rồi. Đêm đó đứng bên Hồ Tây lộng gió, khoảnh khắc khẽ nắm lấy bàn tay em nhỏ nhắn trong tay mình, nghe tiếng em cười trong veo, anh chỉ muốn thời gian ngừng lại mãi thôi.</p>
+            <p>Mỗi ngày có em bên đời đều trôi qua như một thước phim ngọt ngào. Em là tia nắng ấm áp xua tan những buổi sáng ảm đạm, là khoảng trời bình yên dịu dàng nhất để anh tựa vào mỗi khi giông bão kéo về.</p>
+            <p>Cảm ơn em đã nắm lấy tay anh — giữa muôn vàn lối rẽ, giữa tất cả những hoang hoài của tuổi trẻ. Anh yêu em hôm nay, ngày mai, và cho đến tận cùng những năm tháng sau này.</p>
           </div>
-          <div class="signature">— Vũ của em 💌</div>
+          <div class="signature">— Anh iu của em 💌</div>
         </article>
       </div>
     </section>

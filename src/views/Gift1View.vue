@@ -17,7 +17,7 @@ const showHint = ref(false)
     <section class="gift-hero">
 
       <RouterLink to="/" class="back-link">
-        ← Về câu chuyện của chúng mình
+        ← Em có thích món quà đó không
       </RouterLink>
 
       <div class="gift-content">
@@ -66,7 +66,7 @@ const showHint = ref(false)
           </div>
 
           <p class="script">
-            Gửi Trang
+            Gửi Bé iu hay dỗi của anh
           </p>
 
           <h2>
@@ -139,7 +139,7 @@ const showHint = ref(false)
               type="button"
               @click="showHint = true"
           >
-            ♥ Em đã tìm thấy quà
+            ♥ Em đã tìm thấy quà rồi ạ
           </button>
 
           <div v-else class="found-message">
@@ -159,7 +159,7 @@ const showHint = ref(false)
             <p>
               Nhưng câu chuyện chưa kết thúc đâu...
               <br />
-              Vẫn còn những món quà khác đang chờ em.
+              Nhớ chuẩn bị 1 nồi lẩu để chiêu đãi anh sau khi anh đi làm về mệt nhoaaaa.
             </p>
 
             <RouterLink
